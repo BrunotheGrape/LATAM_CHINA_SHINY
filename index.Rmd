@@ -61,7 +61,5 @@ The China/Latin America GDP Correlation Shiny App allows the user to pick any of
 4. Mexico
 5. Peru
 
-The closer the data points are to the regression line the more closely the data are correlated.
+The user can view the plots seperately or compare countries by checking and unchecking their boxes.
 
-
----
