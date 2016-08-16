@@ -4,6 +4,7 @@ library(shiny); library(ggplot2); library(scales)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output, session) {
+ 
   options(scipen = 999)
   
 output$summary <-  renderText({paste("text to be read", input$argentina)})
@@ -51,6 +52,7 @@ output$summary <-  renderText({paste("text to be read", input$argentina)})
  p <- p + geom_smooth(method = lm, size = 1, se = FALSE)
  
   print(p)
+  
     
   })
   
