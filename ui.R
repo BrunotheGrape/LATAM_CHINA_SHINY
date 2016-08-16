@@ -15,7 +15,11 @@ shinyUI(pageWithSidebar(
   ),
   mainPanel(
     tabsetPanel(
-      tabPanel("How to Use This App", verbatimTextOutput("summary")),
-      tabPanel("Click Here For Plot", plotOutput('plot1'))
-))))
+      tabPanel(
+    "Click Here For Plot",
+     plotOutput('plot1')),
+    tabPanel(
+      "How to Use This App", includeMarkdown("index.md"))
+    ))))
+
 
