@@ -44,13 +44,22 @@ The China/Latin America GDP Correlation Shiny App is a data visualization tool t
 ```{r echo = F}
 data3 <- read.csv("WB_GDP_Chile.csv", header = TRUE)
 
-
 d <- ggplot(data3, aes(Chile, China, size = 3, colour = "blue")) + geom_point(colour = "#33a02c", shape = 17) + labs(title = "Selected Correlations\nChile", x = "China GDP in $ Millions", y = "Comparison GDP in $ Milliions") + theme(plot.title = element_text(face = "bold", size = 20)) + theme(axis.title = element_text(face = "bold", size = 16)) + scale_x_continuous(labels = comma) + scale_y_continuous(labels = comma) + theme(panel.background = element_rect(fill = "#E5F5F9")) + geom_smooth(method = lm, size = 1, se = FALSE, colour = "#33a02c") + theme(legend.position = "none")
 print(d)
 ```
 
-The chart above is for Chile's GDP correlated with China. 
+
+The chart above illustrates Chile's GDP correlated with China. The data points cluster closely around the regression line indicating a strong correlation between the two GDPs.
+
 ---
+
+The China/Latin America GDP Correlation Shiny App allows the user to pick any of the following countries and add them to the plot:
+
+1. Argentina
+2. Brazil
+3. Chile
+4. Mexico
+5. Peru
 
 The closer the data points are to the regression line the more closely the data are correlated.
 
