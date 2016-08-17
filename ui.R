@@ -8,10 +8,10 @@ shinyUI(pageWithSidebar(
   headerPanel( "China/Latin America GDP Correlations"),
   sidebarPanel( "Select GDP Correlation",
     checkboxInput("argentina", label = "Argentina", value = TRUE),
-    checkboxInput("brazil", label = "Brazil", value = TRUE),
-    checkboxInput("chile", label = "Chile", value = TRUE),
-    checkboxInput("mexico", label = "Mexico", value = TRUE),
-    checkboxInput("peru", label = "Peru", value = TRUE)
+    checkboxInput("brazil", label = "Brazil", value = FALSE),
+    checkboxInput("chile", label = "Chile", value = FALSE),
+    checkboxInput("mexico", label = "Mexico", value = FALSE),
+    checkboxInput("peru", label = "Peru", value = FALSE)
   ),
   mainPanel(
     tabsetPanel(
