@@ -23,7 +23,7 @@ China has gained a growing proportion of the world's manufacturing capacity over
 
 ---
 
-![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png)
+![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png)
 
 In 1990 China's share of world GDP was around 2%. By 2015 it had grown to almost 15%.
 
@@ -36,12 +36,20 @@ The China/Latin America GDP Correlation Shiny App is a data visualization tool t
 
 ---
 
-![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
 
-The chart above is for Chile's GDP correlated with China. 
----
 
-The closer the data points are to the regression line the more closely the data are correlated.
-
+The chart above illustrates Chile's GDP correlated with China. The data points cluster closely around the regression line indicating a strong correlation between the two GDPs.
 
 ---
+
+The China/Latin America GDP Correlation Shiny App allows the user to pick any of the following countries and add them to the plot:
+
+1. Argentina
+2. Brazil
+3. Chile
+4. Mexico
+5. Peru
+
+The user can view the plots seperately or compare countries by checking and unchecking their boxes.
+
