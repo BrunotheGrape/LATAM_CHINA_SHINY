@@ -23,9 +23,9 @@ China has gained a growing proportion of the world's manufacturing capacity over
 
 ---
 
-```{r echo = F, warning = F}
-require(ggplot2)
-data1 <- read.csv("CHNGPERCGDPData.csv")
+```{r echo = F, warning = F, message = F}
+require(ggplot2); require(scales)
+data1 <- read.csv("CHNGPERCGDPData.csv", header = TRUE)
 p <- ggplot(data1, aes(Year, Perc_GDP)) + geom_point(size = 3, color = "darkred") + geom_line() + ylab("China Percentage of World GDP") + theme(panel.background = element_rect(fill = "#E5F5F9")) + scale_y_continuous(labels=percent)
 print(p)
 ```
